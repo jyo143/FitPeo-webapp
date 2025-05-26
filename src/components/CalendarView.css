@@ -1,0 +1,210 @@
+
+.calendar-view {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.calendar-period {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.calendar-month {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.this-week-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.health-week-card {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #e5e7eb;
+}
+
+.health-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.health-icon {
+  font-size: 1.5rem;
+}
+
+.health-title {
+  color: #1f2937;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.health-date {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.health-progress {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.calendar-grid {
+  margin-bottom: 2rem;
+}
+
+.calendar-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.day-header {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.date-cell {
+  min-height: 80px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.date-cell.today {
+  background: #e0e7ff;
+}
+
+.date-number {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.appointment-time {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.appointment-time.morning {
+  background: #4f46e5;
+  color: white;
+}
+
+.appointment-time.afternoon {
+  background: #a855f7;
+  color: white;
+}
+
+.appointment-cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.appointment-card {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-card.dentist {
+  background: #4f46e5;
+  color: white;
+}
+
+.appointment-card.physiotherapy {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.appointment-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.appointment-icon {
+  font-size: 1.5rem;
+}
+
+.appointment-card h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.appointment-time-text {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.doctor-name {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .this-week-cards {
+    flex-direction: column;
+  }
+  
+  .calendar-dates {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+  }
+  
+  .date-cell {
+    min-height: 60px;
+    font-size: 0.75rem;
+  }
+  
+  .appointment-cards {
+    flex-direction: column;
+  }
+}

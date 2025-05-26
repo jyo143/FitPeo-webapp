@@ -1,0 +1,36 @@
+
+.upcoming-schedule {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-title {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.schedule-day {
+  margin-bottom: 2rem;
+}
+
+.day-title {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.appointments-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .appointments-grid {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,48 @@
+
+.simple-appointment-card {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.simple-appointment-card.checkup {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.simple-appointment-card.specialist {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.appointment-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.appointment-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.appointment-details {
+  flex: 1;
+}
+
+.appointment-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.appointment-time {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
